@@ -1,0 +1,17 @@
+$(function(){
+        console.log("setting up page")
+      var currentYear = new Date().getFullYear();
+      $('.copyrightText').each(function(o){
+        $(this).text("Swag Aliens " + currentYear);
+      })
+      var discordUrl = ""
+      var resultDiscord = document.getElementsByClassName('discordUrl');
+      $('.discordUrl').each(function(o){
+            $(this).attr("href", discordUrl)
+      });
+      
+      var twitterUrl = "https://twitter.com/Swag_Aliens"
+      $('.twitterUrl').each(function(o){
+        $(this).attr("href", twitterUrl)
+      })
+     });
